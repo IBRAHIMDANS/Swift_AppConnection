@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="TD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-nt-08d" customClass="ProfilView" customModule="TD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-0j-f2v" customClass="SignUpview" customModule="TD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOD-4Z-AJ9" customClass="SignInView" customModule="TD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hgr-0j-f2v" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0sX-Zf-u7b"/>
+                            <constraint firstItem="Rcf-nt-08d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3AZ-Fl-4gi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AOD-4Z-AJ9" secondAttribute="bottom" id="Byf-Xm-2CI"/>
+                            <constraint firstItem="Rcf-nt-08d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DCu-7h-Xx5"/>
+                            <constraint firstItem="hgr-0j-f2v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OTz-sc-Ph8"/>
+                            <constraint firstItem="AOD-4Z-AJ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RQo-0w-UiD"/>
+                            <constraint firstItem="Rcf-nt-08d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VhI-DT-QmA"/>
+                            <constraint firstItem="AOD-4Z-AJ9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="auw-rT-bQe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hgr-0j-f2v" secondAttribute="bottom" id="cgt-e1-7xR"/>
+                            <constraint firstItem="AOD-4Z-AJ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eBZ-BE-SDi"/>
+                            <constraint firstItem="hgr-0j-f2v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kgm-IJ-kdg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rcf-nt-08d" secondAttribute="bottom" id="oXd-PP-O1o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Profil" destination="Rcf-nt-08d" id="gxt-KQ-YtN"/>
+                        <outlet property="SignIn" destination="AOD-4Z-AJ9" id="Wzs-B4-eLx"/>
+                        <outlet property="SignUp" destination="hgr-0j-f2v" id="qfs-kn-pNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-449.32533733133437"/>
+        </scene>
+    </scenes>
+</document>
